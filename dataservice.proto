@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package grpcdemo;
+
+service Demoservice {
+  rpc StringData (StringReq) returns (StringRsp) {}
+  rpc NumberData (DataNumberReq) returns (DataNumberReply) {}
+  rpc FileData(stream FileContent) returns (stream FileContent) {}
+}
+
+message StringReq {
+  string name = 1;
+}
+
+message StringRsp {
+  string message = 1;
+}
+
+message DataNumberReq {
+  int32 data = 1;
+}
+
+message DataNumberReply {
+  int32 data = 1;
+}
+
+message FileContent{
+  string data = 1;
+}

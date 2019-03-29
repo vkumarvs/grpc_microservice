@@ -28,7 +28,7 @@ mode.
 **How to run containerized solution (Ubuntu 18.04 container):**
 ```
 Clone the repo on your machine:
-    git clone git@github.com:vkumarvs/knapsackapi.git
+    git clone git@github.com:vkumarvs/grpc_microservice.git
 
 Invoke the docker-compose file :
    docker-compose up
